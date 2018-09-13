@@ -11,6 +11,9 @@ public class StudentDao {
     HibernateTemplate hibernateTemplate;
 
     public StudentEntity  find(int id){
+        System.out.println(1);
         return  hibernateTemplate.get(StudentEntity.class,id);
+
+
     }
 }
